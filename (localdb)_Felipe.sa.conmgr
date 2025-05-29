@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(localdb)_Felipe.sa"
+  DTS:DTSID="{982A1C44-6950-4B53-B420-D756C9BDE63A}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=(localdb)\Felipe;User ID=sa;Initial Catalog=UsuariosDB;Persist Security Info=True;Encrypt=False;TrustServerCertificate=True;Application Name=SSIS-CapturaExcel-{982A1C44-6950-4B53-B420-D756C9BDE63A}(localdb)\Felipe.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAb8i7ed88nkyOOqiUVq3CFgAAAAACAAAAAAAQZgAAAAEAACAAAADDr5Gipsb/pXI0ylYHG5N//tjXS1KdfWVqDhyyNjbFPAAAAAAOgAAAAAIAACAAAAC1d0BuQDgQ+5Lco1zlp/lc77QX83NM6r/bwDaSGVDyOIAAAACO44Qk2JEpVwPf62BEsnKzCx1JylO2SYFg+SWY8EhFUB2nDJdzE7MAzv6Q6JIN+oO4DkKUmTRdV2f082+oIkcHK7UBNUOON0rmtSBXFZWPeDIJAIbQpAVtYLoDJxXu5q745hgcji2FXCv0eCYfWMvflxF3RQcVxkc4w3tmIssjyUAAAABZca+p0GuAQ8tSiyreNnst00TEuB7wHnFsZvtdE9QTKioEmwhN7RejSuenarKnMBGJKsGZOMA8vSFfN/SKesYt</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
