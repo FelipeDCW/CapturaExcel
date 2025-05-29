@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CapturaExcel"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{D6C2EEBE-2FE8-40FB-A088-5C43B157ED0F}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{77E728BC-8D7F-4294-9E4C-C3BA3E9313AF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -150,7 +150,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Idm]"
-                      dataType="ui8"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Importa Datos Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Idm]"
@@ -274,7 +274,7 @@
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Fecha de Nacimiento]" />
                     <inputColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Idm]"
-                      cachedDataType="ui8"
+                      cachedDataType="i4"
                       cachedName="Idm"
                       externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Id]"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Idm]" />
@@ -569,7 +569,7 @@
                       lineageId="Package\Importa Datos Excel\Sort 1.Outputs[Sort Output].Columns[Fecha de Nacimiento]" />
                     <inputColumn
                       refId="Package\Importa Datos Excel\Merge Join.Inputs[Merge Join Left Input].Columns[Idm]"
-                      cachedDataType="ui8"
+                      cachedDataType="i4"
                       cachedName="Idm"
                       lineageId="Package\Importa Datos Excel\Sort 1.Outputs[Sort Output].Columns[Idm]" />
                   </inputColumns>
@@ -660,7 +660,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Idm]"
-                      dataType="ui8"
+                      dataType="i4"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Idm]"
                       name="Idm">
                       <properties>
@@ -1143,7 +1143,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Importa Datos Excel\Sort 1.Inputs[Sort Input].Columns[Idm]"
-                      cachedDataType="ui8"
+                      cachedDataType="i4"
                       cachedName="Idm"
                       lineageId="Package\Importa Datos Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Idm]">
                       <properties>
@@ -1225,7 +1225,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Sort 1.Outputs[Sort Output].Columns[Idm]"
-                      dataType="ui8"
+                      dataType="i4"
                       lineageId="Package\Importa Datos Excel\Sort 1.Outputs[Sort Output].Columns[Idm]"
                       name="Idm">
                       <properties>
@@ -1308,115 +1308,51 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\Importa Datos Excel\Origen de ADO NET"
+          TopLeft="74.0740700268453,213.777776291194" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Importa Datos Excel\Data Conversion"
+          TopLeft="279.629614351341,114.59259179573" />
+        <NodeLayout
           Size="127.2,41.6"
           Id="Package\Importa Datos Excel\Leer Excel"
           TopLeft="77.4999957655868,115.266665865117" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Importa Datos Excel\Sort"
+          TopLeft="379.629608887582,232.07407246026" />
         <NodeLayout
           Size="176.8,41.6"
           Id="Package\Importa Datos Excel\Destino de ADO NET"
           TopLeft="690.740703000332,110.740739970663" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\Importa Datos Excel\Data Conversion"
-          TopLeft="279.629614351341,114.59259179573" />
-        <EdgeLayout
-          Id="Package\Importa Datos Excel.Paths[Excel Source Output]"
-          TopLeft="204.699995765587,135.729628830423">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="74.9296185857541,0"
-              Start="0,0"
-              End="67.4296185857541,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="67.4296185857541,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Importa Datos Excel\Conditional Split"
-          TopLeft="753.703662523151,222.444442897593" />
-        <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\Importa Datos Excel\Origen de ADO NET"
-          TopLeft="74.0740700268453,213.777776291194" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Importa Datos Excel\Sort"
-          TopLeft="379.629608887582,232.07407246026" />
-        <EdgeLayout
-          Id="Package\Importa Datos Excel.Paths[Salida de origen de ADO NET]"
-          TopLeft="246.874070026845,234.577776291194">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="132.755538860737,18.2962961690662"
-              Start="0,0"
-              End="125.255538860737,18.2962961690662">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="62.3777694303684,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="62.3777694303684,0"
-                    Point2="66.3777694303684,0"
-                    Point3="66.3777694303684,4" />
-                  <mssgle:LineSegment
-                    End="66.3777694303684,14.2962961690662" />
-                  <mssgle:CubicBezierSegment
-                    Point1="66.3777694303684,14.2962961690662"
-                    Point2="66.3777694303684,18.2962961690662"
-                    Point3="70.3777694303684,18.2962961690662" />
-                  <mssgle:LineSegment
-                    End="125.255538860737,18.2962961690662" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="129.6,41.6"
+          Id="Package\Importa Datos Excel\Merge Join"
+          TopLeft="554.629599326004,229.18518359146" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Importa Datos Excel\Sort 1"
           TopLeft="480.555529299159,123.25925840213" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Importa Datos Excel\Conditional Split"
+          TopLeft="753.703662523151,222.444442897593" />
         <EdgeLayout
-          Id="Package\Importa Datos Excel.Paths[Data Conversion Output]"
-          TopLeft="435.629614351341,135.39259179573">
+          Id="Package\Importa Datos Excel.Paths[Sort Output1]"
+          TopLeft="477.229608887582,251.42962802586">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="44.9259149478178,8.6666666063997"
+              EndConnector="77.399990438422,0"
               Start="0,0"
-              End="37.4259149478178,8.6666666063997">
+              End="69.899990438422,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.4629574739089,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.4629574739089,0"
-                    Point2="22.4629574739089,0"
-                    Point3="22.4629574739089,4" />
-                  <mssgle:LineSegment
-                    End="22.4629574739089,4.6666666063997" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.4629574739089,4.6666666063997"
-                    Point2="22.4629574739089,8.6666666063997"
-                    Point3="26.4629574739089,8.6666666063997" />
-                  <mssgle:LineSegment
-                    End="37.4259149478178,8.6666666063997" />
+                    End="69.899990438422,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1425,10 +1361,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Importa Datos Excel\Merge Join"
-          TopLeft="554.629599326004,229.18518359146" />
         <EdgeLayout
           Id="Package\Importa Datos Excel.Paths[Sort Output]"
           TopLeft="533.755529299159,164.85925840213">
@@ -1464,19 +1396,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importa Datos Excel.Paths[Sort Output1]"
-          TopLeft="477.229608887582,251.42962802586">
+          Id="Package\Importa Datos Excel.Paths[Salida de origen de ADO NET]"
+          TopLeft="246.874070026845,234.577776291194">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="77.399990438422,0"
+              EndConnector="132.755538860737,18.2962961690662"
               Start="0,0"
-              End="69.899990438422,0">
+              End="125.255538860737,18.2962961690662">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="69.899990438422,0" />
+                    End="62.3777694303684,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="62.3777694303684,0"
+                    Point2="66.3777694303684,0"
+                    Point3="66.3777694303684,4" />
+                  <mssgle:LineSegment
+                    End="66.3777694303684,14.2962961690662" />
+                  <mssgle:CubicBezierSegment
+                    Point1="66.3777694303684,14.2962961690662"
+                    Point2="66.3777694303684,18.2962961690662"
+                    Point3="70.3777694303684,18.2962961690662" />
+                  <mssgle:LineSegment
+                    End="125.255538860737,18.2962961690662" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1504,6 +1448,64 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.9870315985736,5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importa Datos Excel.Paths[Excel Source Output]"
+          TopLeft="204.699995765587,135.729628830423">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.9296185857541,0"
+              Start="0,0"
+              End="67.4296185857541,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="67.4296185857541,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importa Datos Excel.Paths[Data Conversion Output]"
+          TopLeft="435.629614351341,135.39259179573">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.9259149478178,8.6666666063997"
+              Start="0,0"
+              End="37.4259149478178,8.6666666063997">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.4629574739089,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.4629574739089,0"
+                    Point2="22.4629574739089,0"
+                    Point3="22.4629574739089,4" />
+                  <mssgle:LineSegment
+                    End="22.4629574739089,4.6666666063997" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.4629574739089,4.6666666063997"
+                    Point2="22.4629574739089,8.6666666063997"
+                    Point3="26.4629574739089,8.6666666063997" />
+                  <mssgle:LineSegment
+                    End="37.4259149478178,8.6666666063997" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -1513,9 +1515,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-51.3629595228189,-70.10370292693"
+              EndConnector="-51.362959522819,-70.10370292693"
               Start="0,0"
-              End="-51.3629595228189,-62.60370292693">
+              End="-51.362959522819,-62.60370292693">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1526,26 +1528,34 @@
                     Point2="0,-35.051851463465"
                     Point3="-4,-35.051851463465" />
                   <mssgle:LineSegment
-                    End="-47.3629595228189,-35.051851463465" />
+                    End="-47.362959522819,-35.051851463465" />
                   <mssgle:CubicBezierSegment
-                    Point1="-47.3629595228189,-35.051851463465"
-                    Point2="-51.3629595228189,-35.051851463465"
-                    Point3="-51.3629595228189,-39.051851463465" />
+                    Point1="-47.362959522819,-35.051851463465"
+                    Point2="-51.362959522819,-35.051851463465"
+                    Point3="-51.362959522819,-39.051851463465" />
                   <mssgle:LineSegment
-                    End="-51.3629595228189,-62.60370292693" />
+                    End="-51.362959522819,-62.60370292693" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-40.8995656989094,-30.051851463465,30.436171875,9.5537109375"
+              BoundingBox="-40.8995656989095,-30.051851463465,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importa Datos Excel\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Importa Datos Excel\Leer Excel">
     <Properties>
@@ -1561,14 +1571,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Importa Datos Excel\Destino de ADO NET">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importa Datos Excel\Origen de ADO NET">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
