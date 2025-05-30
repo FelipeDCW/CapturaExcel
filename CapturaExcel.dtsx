@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CapturaExcel"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{77E728BC-8D7F-4294-9E4C-C3BA3E9313AF}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{14D9E6C5-4566-477F-90AA-D0DEDB570F51}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -267,17 +267,17 @@
                       externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Correo]"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Correo]" />
                     <inputColumn
+                      refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Id]"
+                      lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Id]" />
+                    <inputColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Fecha de Nacimiento]"
                       cachedDataType="date"
                       cachedName="Fecha de Nacimiento"
                       externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaNacimiento]"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Fecha de Nacimiento]" />
-                    <inputColumn
-                      refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Idm]"
-                      cachedDataType="i4"
-                      cachedName="Idm"
-                      externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Id]"
-                      lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Idm]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -288,17 +288,17 @@
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombre]"
                       dataType="wstr"
-                      length="2147483647"
+                      length="50"
                       name="Nombre" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Rut]"
                       dataType="wstr"
-                      length="450"
+                      length="50"
                       name="Rut" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Correo]"
                       dataType="wstr"
-                      length="2147483647"
+                      length="255"
                       name="Correo" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaNacimiento]"
@@ -583,7 +583,7 @@
                     <inputColumn
                       refId="Package\Importa Datos Excel\Merge Join.Inputs[Merge Join Right Input].Columns[Rut]"
                       cachedDataType="wstr"
-                      cachedLength="450"
+                      cachedLength="50"
                       cachedName="Rut"
                       cachedSortKeyPosition="1"
                       lineageId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Rut]" />
@@ -751,10 +751,11 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Nombre]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Nombre]"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Nombre]"
                       name="Nombre"
                       truncationRowDisposition="FailComponent" />
@@ -764,28 +765,28 @@
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Rut]"
-                      length="450"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Rut]"
                       name="Rut"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Correo]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Correo]"
+                      length="200"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Correo]"
                       name="Correo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[FechaNacimiento]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[FechaNacimiento]"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[FechaNacimiento]"
                       name="FechaNacimiento"
-                      scale="7"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -796,22 +797,23 @@
                       name="Id" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Nombre]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="50"
                       name="Nombre" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Rut]"
                       dataType="wstr"
-                      length="450"
+                      length="50"
                       name="Rut" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Correo]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Correo" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[FechaNacimiento]"
-                      dataType="dbTimeStamp2"
-                      name="FechaNacimiento"
-                      scale="7" />
+                      dataType="dbDate"
+                      name="FechaNacimiento" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -826,26 +828,27 @@
                       name="Id" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Nombre]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Nombre]"
                       name="Nombre" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Rut]"
                       dataType="wstr"
-                      length="450"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Rut]"
                       name="Rut" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Correo]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Correo]"
                       name="Correo" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[FechaNacimiento]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbDate"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[FechaNacimiento]"
-                      name="FechaNacimiento"
-                      scale="7" />
+                      name="FechaNacimiento" />
                     <outputColumn
                       refId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
@@ -904,7 +907,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Importa Datos Excel\Sort.Inputs[Sort Input].Columns[Nombre]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="Nombre"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Nombre]">
                       <properties>
@@ -921,7 +925,7 @@
                     <inputColumn
                       refId="Package\Importa Datos Excel\Sort.Inputs[Sort Input].Columns[Rut]"
                       cachedDataType="wstr"
-                      cachedLength="450"
+                      cachedLength="50"
                       cachedName="Rut"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Rut]">
                       <properties>
@@ -937,7 +941,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Importa Datos Excel\Sort.Inputs[Sort Input].Columns[Correo]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Correo"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Correo]">
                       <properties>
@@ -953,9 +958,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Importa Datos Excel\Sort.Inputs[Sort Input].Columns[FechaNacimiento]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbDate"
                       cachedName="FechaNacimiento"
-                      cachedScale="7"
                       lineageId="Package\Importa Datos Excel\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[FechaNacimiento]">
                       <properties>
                         <property
@@ -993,7 +997,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Nombre]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Nombre]"
                       name="Nombre">
                       <properties>
@@ -1007,7 +1012,7 @@
                     <outputColumn
                       refId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Rut]"
                       dataType="wstr"
-                      length="450"
+                      length="50"
                       lineageId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Rut]"
                       name="Rut"
                       sortKeyPosition="1">
@@ -1021,7 +1026,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Correo]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       lineageId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[Correo]"
                       name="Correo">
                       <properties>
@@ -1034,10 +1040,9 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[FechaNacimiento]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbDate"
                       lineageId="Package\Importa Datos Excel\Sort.Outputs[Sort Output].Columns[FechaNacimiento]"
-                      name="FechaNacimiento"
-                      scale="7">
+                      name="FechaNacimiento">
                       <properties>
                         <property
                           containsID="true"
@@ -1334,7 +1339,7 @@
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Importa Datos Excel\Sort 1"
-          TopLeft="480.555529299159,123.25925840213" />
+          TopLeft="535.555526294092,114.59259179573" />
         <NodeLayout
           Size="153.6,41.6"
           Id="Package\Importa Datos Excel\Conditional Split"
@@ -1363,30 +1368,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Importa Datos Excel.Paths[Sort Output]"
-          TopLeft="533.755529299159,164.85925840213">
+          TopLeft="588.755526294092,156.19259179573">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="85.6740700268452,64.3259251893302"
+              EndConnector="30.6740730319123,72.9925917957297"
               Start="0,0"
-              End="85.6740700268452,56.8259251893302">
+              End="30.6740730319123,65.4925917957297">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.1629625946651" />
+                    End="0,32.4962958978649" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.1629625946651"
-                    Point2="0,32.1629625946651"
-                    Point3="4,32.1629625946651" />
+                    Point1="0,32.4962958978649"
+                    Point2="0,36.4962958978649"
+                    Point3="4,36.4962958978649" />
                   <mssgle:LineSegment
-                    End="81.6740700268452,32.1629625946651" />
+                    End="26.6740730319123,36.4962958978649" />
                   <mssgle:CubicBezierSegment
-                    Point1="81.6740700268452,32.1629625946651"
-                    Point2="85.6740700268452,32.1629625946651"
-                    Point3="85.6740700268452,36.1629625946651" />
+                    Point1="26.6740730319123,36.4962958978649"
+                    Point2="30.6740730319123,36.4962958978649"
+                    Point3="30.6740730319123,40.4962958978649" />
                   <mssgle:LineSegment
-                    End="85.6740700268452,56.8259251893302" />
+                    End="30.6740730319123,65.4925917957297" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1401,26 +1406,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="132.755538860737,18.2962961690662"
+              EndConnector="132.755538860737,18.296296169066"
               Start="0,0"
-              End="125.255538860737,18.2962961690662">
+              End="125.255538860737,18.296296169066">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="62.3777694303684,0" />
+                    End="62.3777694303683,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="62.3777694303684,0"
-                    Point2="66.3777694303684,0"
-                    Point3="66.3777694303684,4" />
+                    Point1="62.3777694303683,0"
+                    Point2="66.3777694303683,0"
+                    Point3="66.3777694303683,4" />
                   <mssgle:LineSegment
-                    End="66.3777694303684,14.2962961690662" />
+                    End="66.3777694303683,14.296296169066" />
                   <mssgle:CubicBezierSegment
-                    Point1="66.3777694303684,14.2962961690662"
-                    Point2="66.3777694303684,18.2962961690662"
-                    Point3="70.3777694303684,18.2962961690662" />
+                    Point1="66.3777694303683,14.296296169066"
+                    Point2="66.3777694303683,18.296296169066"
+                    Point3="70.3777694303683,18.296296169066" />
                   <mssgle:LineSegment
-                    End="125.255538860737,18.2962961690662" />
+                    End="125.255538860737,18.296296169066" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1481,26 +1486,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="44.9259149478178,8.6666666063997"
+              EndConnector="99.9259119427507,0"
               Start="0,0"
-              End="37.4259149478178,8.6666666063997">
+              End="92.4259119427507,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.4629574739089,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.4629574739089,0"
-                    Point2="22.4629574739089,0"
-                    Point3="22.4629574739089,4" />
-                  <mssgle:LineSegment
-                    End="22.4629574739089,4.6666666063997" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.4629574739089,4.6666666063997"
-                    Point2="22.4629574739089,8.6666666063997"
-                    Point3="26.4629574739089,8.6666666063997" />
-                  <mssgle:LineSegment
-                    End="37.4259149478178,8.6666666063997" />
+                    End="92.4259119427507,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
