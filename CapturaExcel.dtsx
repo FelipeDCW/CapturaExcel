@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CapturaExcel"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{14D9E6C5-4566-477F-90AA-D0DEDB570F51}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{02172288-424F-43A2-8573-52C2C18B610B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -267,17 +267,17 @@
                       externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Correo]"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Correo]" />
                     <inputColumn
-                      refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Id]"
-                      cachedDataType="i4"
-                      cachedName="Id"
-                      externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Id]"
-                      lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Id]" />
-                    <inputColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Fecha de Nacimiento]"
                       cachedDataType="date"
                       cachedName="Fecha de Nacimiento"
                       externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaNacimiento]"
                       lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Fecha de Nacimiento]" />
+                    <inputColumn
+                      refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Idm]"
+                      cachedDataType="i4"
+                      cachedName="Idm"
+                      externalMetadataColumnId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Id]"
+                      lineageId="Package\Importa Datos Excel\Merge Join.Outputs[Merge Join Output].Columns[Idm]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -298,7 +298,7 @@
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Correo]"
                       dataType="wstr"
-                      length="255"
+                      length="200"
                       name="Correo" />
                     <externalMetadataColumn
                       refId="Package\Importa Datos Excel\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[FechaNacimiento]"
